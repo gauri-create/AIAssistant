@@ -4,50 +4,61 @@ body{
     overflow-x: hidden;
 
 }
+#JarvisHood{
+position: relative;
+}
 
+canvas{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.center-screen{
+    height: 80vh;
+}
 .square{
     position: relative;
-    width:400px;
-    height:400px;
+    width:420px;
+    height:420px;
     display: flex;
-    justify-content: ceter;
+    justify-content: center;
     align-items: center;
 }
  
-.squre span:nth-child(1){
+.square span:nth-child(1){
     position : absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(#6b72ff00 50%, #000dff3b 40%);
-    box-shadow: 0 0 50x rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
+    box-shadow: 0 0 50px rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     transition: 0.5s;
     animation: animate1 6s linear infinite;
 }
 
-.squre span:nth-child(2){
+.square span:nth-child(2){
     position : absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(#6b72ff00 50%, #000dff3b 40%);
-    box-shadow: 0 0 50x rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
+    box-shadow: 0 0 50px rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     transition: 0.5s;
     animation: animate2 4s linear infinite;
 }
 
-.squre span:nth-child(3){
+.square span:nth-child(3){
     position : absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-image: radial-gradient(#6b72ff00 50%, #000dff3b 40%);
-    box-shadow: 0 0 50x rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
+    box-shadow: 0 0 50px rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     transition: 0.5s;
     animation: animate3 8s linear infinite;
@@ -78,4 +89,14 @@ body{
     100%{
         transform: rotate(360deg);
     }
+}
+
+
+.text{
+    color: #375404;
+    font-size:  50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-reflect: below -15px  linear-gradient(transparent, #00000040) ;
 }

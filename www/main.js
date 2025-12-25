@@ -1,13 +1,15 @@
-$(document).ready(function(){
-
+$(document).ready(function () {
     $('.text').textillate({
         loop: true,
-        sync: true,
         in:{
             effect: "bounceIn",
+            delayScale:3,
+            delay: 2,
         },
         out:{
-            effect: "bounceOut",
-        },
+            effect:"bounceOut",
+            delayScale:3,
+            delay:2
+        }
     });
 });
